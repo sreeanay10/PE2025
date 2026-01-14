@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNS Stimulants Research Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        opacity: 0.9;
+        margin: 5px 0;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    
+    h2 {
+        color: #2a5298;
+        border-bottom: 4px solid #667eea;
+        padding-bottom: 10px;
+        margin: 35px 0 20px 0;
+        font-size: 32px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    
+    .intro-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin: 20px 0;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    
+    .intro-section strong {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .info-box {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        padding: 20px;
+        border-left: 5px solid #2a5298;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .warning-box {
+        background: linear-gradient(to right, #fff9e6, #ffe6b3);
+        padding: 20px;
+        border-left: 5px solid #ff9800;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    ul {
+        margin: 15px 0;
+        padding-left: 40px;
+    }
+    
+    li {
+        margin: 12px 0;
+        line-height: 1.7;
+    }
+    
+    li strong {
+        color: #2a5298;
+    }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .stat-box {
+        background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .stat-box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+    }
+    
+    .stat-number {
+        font-size: 56px;
+        font-weight: bold;
+        color: #28a745;
+        margin-bottom: 10px;
+    }
+    
+    .stat-box p {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    
+    .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin: 25px 0;
+    }
+    
+    .column {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 10px;
+        border-top: 4px solid #667eea;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .column h3 {
+        color: #2a5298;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .help-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 35px;
+        border-radius: 12px;
+        text-align: center;
+        margin: 30px 0;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    
+    .help-section h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .help-section .phone {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 15px 0;
+        color: #ffd700;
+    }
+    
+    .conclusion-box {
+        background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+        padding: 25px;
+        border-left: 5px solid #4caf50;
+        margin: 25px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .conclusion-box h3 {
+        color: #2a5298;
+        margin-bottom: 15px;
+    }
+    
+    .sources {
+        background: #f8f9fa;
+        padding: 25px;
+        margin-top: 40px;
+        border-radius: 12px;
+        border-top: 4px solid #2a5298;
+    }
+    
+    .sources h3 {
+        color: #2a5298;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    
+    .sources ol {
+        margin-left: 20px;
+    }
+    
+    .sources li {
+        margin: 15px 0;
+        line-height: 1.7;
+    }
+    
+    footer {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        margin-top: 40px;
+        box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
+    }
+    
+    footer p {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            margin: 20px;
+            padding: 25px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        h2 {
+            font-size: 26px;
+        }
+        
+        .two-columns {
+            grid-template-columns: 1fr;
+        }
+        
+        .stats-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <h1>Understanding CNS Stimulants</h1>
+        <p class="subtitle">The Truth About Adderall, Ritalin, and Prescription Stimulants</p>
+        <p class="subtitle">Health Research Project | 2025</p>
+    </header>
+
+```
+<div class="container">
+    <h2>What Are CNS Stimulants?</h2>
+    <p>CNS stands for Central Nervous System, which is basically your brain and spinal cord. CNS stimulants are drugs that speed up your body and make everything work faster. They increase your heart rate, raise your blood pressure, and make you feel more awake and alert.</p>
+    
+    <p>Some common examples are Adderall, Ritalin, Concerta, and illegal drugs like cocaine and methamphetamine. A lot of people think prescription stimulants are totally safe because doctors prescribe them, but that's actually not true when you misuse them or take someone else's medication.</p>
+    
+    <div class="intro-section">
+        <strong>How Do They Actually Work?</strong>
+        <p>These drugs mess with the chemicals in your brain, specifically dopamine and norepinephrine. When these chemicals increase, you feel more focused, energized, and alert. That's why doctors sometimes prescribe them to people with ADHD - it helps them concentrate. But when people without ADHD take them, or when anyone takes too much, things can go really wrong really fast.</p>
+    </div>
+
+    <h2>Short-Term Effects</h2>
+    <p>When someone takes CNS stimulants, they'll notice these effects pretty quickly:</p>
+    <ul>
+        <li>Way more energy than normal and feeling super awake</li>
+        <li>Heart beating really fast and breathing faster</li>
+        <li>Not feeling hungry at all, even skipping meals</li>
+        <li>Body temperature goes up and sweating more</li>
+        <li>Can't fall asleep or stay asleep</li>
+        <li>Feeling really happy, confident, or like you can do anything</li>
+        <li>Getting nervous, anxious, or feeling jittery</li>
+        <li>Headaches and sometimes dizziness</li>
+    </ul>
+
+    <h2>Long-Term Effects</h2>
+    <div class="warning-box">
+        <strong>This Is Serious:</strong> Using stimulants for a long time or misusing them can cause health problems that might be permanent. We're talking about damage that doesn't just go away.
+    </div>
+    <ul>
+        <li><strong>Heart Problems:</strong> Your heart can start beating irregularly, your blood pressure gets dangerously high, and you could even have a heart attack - even if you're young and healthy</li>
+        <li><strong>Mental Health Gets Worse:</strong> Anxiety gets way worse, depression can develop, you might start feeling paranoid (like people are out to get you), and you can become addicted</li>
+        <li><strong>Losing Weight in an Unhealthy Way:</strong> Not eating enough leads to malnutrition and your body not getting what it needs</li>
+        <li><strong>Brain Changes:</strong> Your memory gets worse and it's harder to think clearly or make decisions</li>
+        <li><strong>Can't Sleep Normally:</strong> Even when you're exhausted, your body won't let you sleep properly</li>
+        <li><strong>Addiction:</strong> Your brain starts to think it needs the drug just to function normally, and quitting becomes really hard</li>
+    </ul>
+
+    <h2>The Real Numbers</h2>
+    
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-number">3.7%</div>
+            <p>of 12th graders reported misusing Adderall in 2023</p>
+            <small><em>Source: Monitoring the Future Survey, NIDA</em></small>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">1 in 8</div>
+            <p>teens who misuse prescription stimulants think they're safer than street drugs</p>
+            <small><em>Source: SAMHSA Report</em></small>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">60%</div>
+            <p>of students who misuse Adderall get it from friends or family members</p>
+            <small><em>Source: National Survey on Drug Use and Health</em></small>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <strong>Here's the Problem:</strong> A lot of students think "study drugs" are completely safe because a doctor prescribed them to someone. But here's the truth - taking someone else's prescription medication is illegal and dangerous. Just because it came from a pharmacy doesn't mean it's safe for YOU to take.
+    </div>
+
+    <h2>Risk Factors vs. Protective Factors</h2>
+    <p>Risk factors are things that make it more likely someone will misuse drugs. Protective factors are things that help prevent drug misuse. Understanding both can help you make better choices.</p>
+    
+    <div class="two-columns">
+        <div class="column">
+            <h3>Risk Factors</h3>
+            <p>Things that increase the chances of drug misuse:</p>
+            <ul>
+                <li><strong>Peer Pressure:</strong> Friends who use drugs or pressure you to try them, especially during exam times</li>
+                <li><strong>Too Much Stress:</strong> Feeling overwhelmed by school, sports, college applications, or other activities</li>
+                <li><strong>Mental Health Struggles:</strong> Dealing with anxiety, depression, or undiagnosed ADHD</li>
+                <li><strong>Family History:</strong> Having family members who struggle with substance abuse</li>
+                <li><strong>Easy Access:</strong> Having prescription medications sitting around at home</li>
+                <li><strong>Not Knowing the Facts:</strong> Not understanding how dangerous these drugs actually are</li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <h3>Protective Factors</h3>
+            <p>Things that help prevent drug misuse:</p>
+            <ul>
+                <li><strong>Strong Family Relationships:</strong> Being able to talk openly with your parents or guardians</li>
+                <li><strong>Healthy Coping Skills:</strong> Dealing with stress through exercise, sleep, hobbies, or other healthy ways</li>
+                <li><strong>Good Friend Groups:</strong> Having friends who don't use drugs and support good decisions</li>
+                <li><strong>School Connection:</strong> Feeling like you belong and are supported at school</li>
+                <li><strong>Education:</strong> Actually understanding the real risks and consequences</li>
+                <li><strong>Access to Help:</strong> Knowing where to get support for mental health or stress</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>How to Protect Yourself</h2>
+    <div class="info-box">
+        <strong>Prevention Strategies - What You Can Actually Do:</strong>
+        <ul>
+            <li>Learn better study habits and time management skills instead of looking for a quick fix</li>
+            <li>Actually get 8-10 hours of sleep - your brain literally needs it to learn and remember things</li>
+            <li>Exercise regularly - it naturally boosts energy, focus, and mood without any side effects</li>
+            <li>Practice saying no to friends who offer you drugs - it's okay to be the one who says no</li>
+            <li>Keep prescription medications locked up and private, even your own</li>
+            <li>If you're really struggling with focus or stress, talk to a doctor about healthy options</li>
+            <li>Help educate your friends about why these drugs are actually dangerous</li>
+        </ul>
+    </div>
+
+    <h2>Getting Help</h2>
+    <p>If you or someone you know is struggling with drug use, it's important to know that help is available and asking for it doesn't make you weak:</p>
+    <ul>
+        <li><strong>Talk to Someone You Trust:</strong> This could be a parent, teacher, school counselor, coach, or any adult you feel comfortable with</li>
+        <li><strong>Call a Helpline:</strong> The SAMHSA National Helpline (1-800-662-4357) is completely free and confidential - nobody will get in trouble</li>
+        <li><strong>See a Professional:</strong> Therapists and counselors specialize in helping people with addiction and they've seen it all before</li>
+        <li><strong>Join a Support Group:</strong> Groups like Narcotics Anonymous connect you with other people who understand what you're going through</li>
+        <li><strong>Get Medical Help:</strong> Doctors can help manage withdrawal symptoms safely if you're trying to quit</li>
+    </ul>
+
+    <h2>Real-World Impact</h2>
+    <p><strong>How Stimulant Abuse Affects Someone's Life:</strong></p>
+    
+    <div class="warning-box">
+        <p><strong>This Actually Happened:</strong> In 2019, a 20-year-old college student collapsed in his university library during finals week. He had been taking Adderall (that wasn't prescribed to him) regularly for about two years because he wanted to study more and get better grades. He thought it was totally safe because it was a prescription drug and a lot of his friends were doing the same thing.</p>
+        
+        <p>The Adderall had been causing his heart to beat irregularly without him knowing it. When he collapsed, his heart had stopped beating properly. The paramedics had to use a defibrillator to restart his heart and rush him to the hospital. He survived, but the damage was already done.</p>
+        
+        <p>Now he has permanent heart damage and needs a pacemaker (a device that helps his heart beat normally) for the rest of his life. He can never play sports again, which was something he really loved. He also had to take time off from college and deal with the medical bills and recovery. All of this happened because he thought taking "study drugs" was harmless.</p>
+        
+        <p><strong>Why This Matters:</strong> This story shows that serious, life-changing consequences can happen to anyone - even young, healthy people who think they're being careful. What seemed like a harmless way to do better in school ended up destroying his health, his college experience, and his future plans. No test grade or GPA is worth risking your life.</p>
+    </div>
+
+    <div class="help-section">
+        <h3>Need Help Right Now?</h3>
+        <p><strong>SAMHSA National Helpline</strong></p>
+        <p class="phone">1-800-662-4357</p>
+        <p>Free, confidential support available 24/7 - You can call anytime</p>
+        <p style="margin-top: 20px;"><strong>Crisis Text Line:</strong> Text "HELLO" to 741741</p>
+    </div>
+
+    <div class="conclusion-box">
+        <h3>What I Learned From This Research</h3>
+        <p>Honestly, before doing this project, I didn't realize how dangerous prescription stimulants actually are. I've heard people at school talk about taking Adderall to study, and they make it sound like it's no big deal - like drinking an energy drink or something. But after learning about the real effects and reading stories like the one about that college student, I get why this is such a serious problem.</p>
+        
+        <p>The thing that surprised me most is that 60% of students who misuse these drugs get them from friends or family. That means someone's ADHD medication sitting in a medicine cabinet could end up seriously hurting someone else. It's kind of scary to think about.</p>
+        
+        <p>I also learned that a lot of the reasons people take these drugs - like stress, wanting better grades, or having trouble focusing - have way better solutions. Getting enough sleep, learning how to manage your time better, and talking to a doctor if you're really struggling are all way safer and actually work better in the long run.</p>
+        
+        <p>The bottom line is that your health is way more important than any grade. And if you're struggling, there are people who can help you without you having to risk your life or your future.</p>
+    </div>
+
+    <div class="sources">
+        <h3>Sources</h3>
+        <ol>
+            <li>National Institute on Drug Abuse (NIDA). "Prescription Stimulants DrugFacts." <em>www.drugabuse.gov/publications/drugfacts/prescription-stimulants</em> Accessed January 2025.</li>
+            <li>Substance Abuse and Mental Health Services Administration (SAMHSA). "Know the Risks of Prescription Stimulant Misuse." <em>www.samhsa.gov/medications-substance-use-disorders</em> Accessed January 2025.</li>
+            <li>Centers for Disease Control and Prevention (CDC). "Prescription Drug Overdose Prevention." <em>www.cdc.gov/drugoverdose</em> Accessed January 2025.</li>
+            <li>University of Michigan. "Monitoring the Future Survey: Teen Drug Use Survey Results 2023." Funded by National Institute on Drug Abuse. <em>monitoringthefuture.org</em></li>
+        </ol>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Remember: Your health and future are worth more than any test score.</strong></p>
+    <p>If you're struggling, reach out. You don't have to handle it alone.</p>
+    <p><strong>SAMHSA Helpline: 1-800-662-4357</strong></p>
+</footer>
+```
+
+</body>
+</html>
